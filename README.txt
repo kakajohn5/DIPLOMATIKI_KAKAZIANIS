@@ -1,6 +1,4 @@
-Σας παραθέτω τα αρχεία που έχω κάνει σχετικά με Frontend και Backend.
-Περιλαμβάνονται όλα τα αρχεία του Frontend στον αντίστοιχο φάκελο μαζί με τον σέρβερ, καθώς και τα αρχεία του backend μαζί με τον server
-REACT αντίστοιχα.
-Για να το δείτε θα πρέπει να το ανοίξετε σε VS Code και στο terminal να τρέξετε την εντολη : npm run dev.
-Έπειτα θα ανοίξει στον browser το http://localhost:3000/, βάζοντας την εξής διεύθυνση http://localhost:3000/login και http://localhost:3000/register
-θα δείτε τα αρχεία που έχω προσθέσει στον server REACT.
+Here is my project called Interactive Process Technologies for People with Autoimmune Bowel Diseases. 
+It is currently under construction, so in the file you will find all the files related to the frontend, as well as files that I have started for the backend.
+To see the project you can open it in vs code and in the terminal run the npm run dev command. (Ignore the folder DIPLOMATIKI_KAKAZIANIS).
+Kakazianis George.
