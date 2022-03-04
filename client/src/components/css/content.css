@@ -17,6 +17,7 @@ main {
 }
 
 header {
+    z-index: 1;
     background-color: #ffffff;
     position        : fixed;
     top             : 0;
