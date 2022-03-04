@@ -65,7 +65,7 @@ iframe {
   justify-content: center;
   align-items: center;
   padding: 15px;
-  background-image: linear-gradient(to right top, #587196, #437291, #317188, #27707c, #286e6e);
+/*  background-image: linear-gradient(to right top, #587196, #437291, #317188, #27707c, #286e6e);*/
 }
 
 .wrap-login100 {
@@ -3241,7 +3241,7 @@ header img {
 }
 body {
     height: 125vh;
-    background-image: linear-gradient(to right top, #587196, #437291, #317188, #27707c, #286e6e);
+   /* background-image: linear-gradient(to right top, #587196, #437291, #317188, #27707c, #286e6e);*/
     background-size: cover;
     font-family: sans-serif;
     margin-top: 80px;

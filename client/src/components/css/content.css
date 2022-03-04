@@ -1,0 +1,292 @@
+header img {
+    height: 80px;
+}
+body {
+    height          : 125vh;
+    
+    background-size : cover;
+    font-family     : sans-serif;
+    margin-top      : 80px;
+    padding         : 30px;
+}
+
+main {
+    color: white;
+}
+
+header {
+    background-color: #8b868666;
+    position        : fixed;
+    top             : 0;
+    left            : 0;
+    right           : 0;
+    height          : 80px;
+    display         : flex;
+    align-items     : center;
+}
+
+header * {
+    display: inline;
+}
+
+header li {
+    margin: 90px;
+}
+
+header li a {
+    color          : black;
+    text-decoration: none;
+}
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,500;1,400&display=swap');
+
+* {
+    margin    : 0;
+    padding   : 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size  : 140%;
+    font-family: 'Roboto', sans-serif;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+.header{
+    border-bottom: 1px solid #E2E8F0;
+}
+
+.navbar {
+    display        : flex;
+    justify-content: space-between;
+    align-items    : center;
+    padding        : 1rem 1.5rem;
+}
+.hamburger {
+    display: none;
+}
+
+.bar {
+    display           : block;
+    width             : 25px;
+    height            : 3px;
+    margin            : 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition        : all 0.3s ease-in-out;
+    background-color  : #101010;
+}
+.nav-menu {
+    display        : flex;
+    justify-content: space-between;
+    align-items    : center;
+}
+
+.nav-item {
+    margin-left: 5rem;
+}
+
+.nav-link{
+    font-size  : 1.6rem;
+    font-weight: 400;
+    color      : #475569;
+}
+
+.nav-link:hover{
+    color: #482ff7;
+}
+
+.nav-logo {
+    font-size  : 2.1rem;
+    font-weight: 500;
+    color      : #482ff7;
+}
+@media only screen and (max-width: 768px) {
+    .nav-menu {
+        position        : fixed;
+        left            : -100%;
+        top             : 5rem;
+        flex-direction  : column;
+        background-color: #fff;
+        width           : 100%;
+        border-radius   : 10px;
+        text-align      : center;
+        transition      : 0.3s;
+        box-shadow      : 
+            0 10px 27px rgba(0, 0, 0, 0.05);
+            
+    }
+
+    .nav-menu.active {
+        left: 0;
+    }
+
+    .nav-item {
+        margin: 2.5rem 0;
+    }
+
+    .hamburger {
+        display: block;
+        cursor : pointer;
+    }
+    .hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburger.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .hamburger.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+}
+/*Logout*/
+.button {
+    display      : inline-block;
+    padding      : 6px 15px;
+    border       : 1px solid #4f4f4f;
+    border-radius: 4px;
+    transition   : all 0.2s ease-in;
+    position     : relative;
+    overflow     : hidden;
+    font-size    : 19px;
+    color        : black;
+    z-index      : 1;
+   }
+   
+   .button:before {
+    content         : "";
+    position        : absolute;
+    left            : 50%;
+    transform       : translateX(-50%) scaleY(1) scaleX(1.25);
+    top             : 100%;
+    width           : 140%;
+    height          : 180%;
+    background-color: rgba(0, 0, 0, 0.05);
+    border-radius   : 50%;
+    display         : block;
+    transition      : all 0.5s 0.1s cubic-bezier(0.55, 0, 0.1, 1);
+    z-index         : -1;
+   }
+
+.button:after {
+    content         : "";
+    position        : absolute;
+    left            : 55%;
+    transform       : translateX(-50%) scaleY(1) scaleX(1.45);
+    top             : 180%;
+    width           : 160%;
+    height          : 190%;
+    background-color: #39bda7;
+    border-radius   : 50%;
+    display         : block;
+    transition      : all 0.5s 0.1s cubic-bezier(0.55, 0, 0.1, 1);
+    z-index         : -1;
+   }
+   
+   .button:hover {
+    color : #ffffff;
+    border: 1px solid #39bda7;
+   }
+   
+   .button:hover:before {
+    top             : -35%;
+    background-color: #39bda7;
+    transform       : translateX(-50%) scaleY(1.3) scaleX(0.8);
+   }
+   
+   .button:hover:after {
+    top             : -45%;
+    background-color: #39bda7;
+    transform       : translateX(-50%) scaleY(1.3) scaleX(0.8);
+   }
+  
+   /*back on top*/
+   #btn-back-to-top {
+    position: fixed;
+    bottom  : 20px;
+    right   : 20px;
+    display : none;
+  }
+  /*doctors*/
+  .card {
+   
+    border       : none;
+    position     : relative;
+    overflow     : hidden;
+    border-radius: 8px;
+    cursor       : pointer
+}
+
+.card:before {
+    content         : "";
+    position        : absolute;
+    left            : 0;
+    top             : 0;
+    width           : 4px;
+    height          : 100%;
+    background-color: #E1BEE7;
+    transform       : scaleY(1);
+    transition      : all 0.5s;
+    transform-origin: bottom
+}
+
+.card:after {
+    content         : "";
+    position        : absolute;
+    left            : 0;
+    top             : 0;
+    width           : 4px;
+    height          : 100%;
+    background-color: #8E24AA;
+    transform       : scaleY(0);
+    transition      : all 0.5s;
+    transform-origin: bottom
+}
+
+.card:hover::after {
+    transform: scaleY(1)
+}
+
+.fonts {
+    font-size: 11px
+}
+
+.social-list {
+    display        : flex;
+    list-style     : none;
+    justify-content: center;
+    padding        : 0
+}
+
+.social-list li {
+    padding  : 10px;
+    color    : #8E24AA;
+    font-size: 19px
+}
+
+.buttons button:nth-child(1) {
+    border: 1px solid #8E24AA !important;
+    color : #8E24AA;
+    height: 40px
+}
+
+.buttons button:nth-child(1):hover {
+    border          : 1px solid #8E24AA !important;
+    color           : #fff;
+    height          : 40px;
+    background-color: #8E24AA
+}
+
+.buttons button:nth-child(2) {
+    border          : 1px solid #8E24AA !important;
+    background-color: #8E24AA;
+    color           : #fff;
+    height          : 40px
+}

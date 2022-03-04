@@ -3,6 +3,7 @@ import { connect } from 'react-redux';
 import PropTypes  from 'prop-types';
 import { login } from '../../actions/auth';
 import {Navigate} from 'react-router-dom';
+import "../css/main.css"
  const Login = ({login, isAuthenticated}) => {
      const [formData, setFormData] = useState({
          name    : '',
@@ -16,40 +17,38 @@ import {Navigate} from 'react-router-dom';
         login(name,email,password);  
     }
     //Redirect if login success
-    if(isAuthenticated){
-        return <Navigate to="/Register"/>
-    }
+   
     return (
         <Fragment>
-        <div  classnameName = "limiter">
-        <div  classnameName = "container-login100">
-        <div  classnameName = "wrap-login100">
-        <form classnameName = "login100-form validate-form" onSubmit={e=>onSubmit(e)}>
-        <span classnameName = "login100-form-title p-b-26"> Sign In </span>
-        <span classnameName = "login100-form-title p-b-48">
-        <i    classnameName = "zmdi zmdi-font"></i>
+        <div  className = "limiter">
+        <div  className = "container-login100">
+        <div  className = "wrap-login100">
+        <form className = "login100-form validate-form" onSubmit={e=>onSubmit(e)}>
+        <span className = "login100-form-title p-b-26"> Sign In </span>
+        <span className = "login100-form-title p-b-48">
+        <i    className = "zmdi zmdi-font"></i>
                     </span>
-                    <div   classnameName = "wrap-input100 validate-input" data-validate = "">
-                    <input classnameName = "input100" type  = "text" value = {name} name = 'name' onChange = {e => onChange(e)} placeholder = "Name" required />
+                    <div   className = "wrap-input100 validate-input" data-validate = "">
+                    <input className = "input100" type  = "text" value = {name} name = 'name' onChange = {e => onChange(e)} placeholder = "Name" required />
                     </div>
-                    <div   classnameName = "wrap-input100 validate-input" data-validate = "Valid email is: a@b.c">
-                    <input classnameName = "input100" type  = "text"  name = 'email' placeholder = "Email" value = {email} name = 'email' onChange = {e => onChange(e)} required />
+                    <div   className = "wrap-input100 validate-input" data-validate = "Valid email is: a@b.c">
+                    <input className = "input100" type  = "text"  name = 'email' placeholder = "Email" value = {email} name = 'email' onChange = {e => onChange(e)} required />
                     </div>
-                    <div  classnameName = "wrap-input100 validate-input" data-validate = "Enter password">
-                    <span classnameName = "btn-show-pass">
-                    <i    classnameName = "zmdi zmdi-eye"></i>
+                    <div  className = "wrap-input100 validate-input" data-validate = "Enter password">
+                    <span className = "btn-show-pass">
+                    <i    className = "zmdi zmdi-eye"></i>
                         </span>
-                        <input classnameName = "input100" type = "password"     name = 'password' placeholder = "Password" value = {password} name = 'password' onChange = {e => onChange(e)} required/>
+                        <input className = "input100" type = "password"     name = 'password' placeholder = "Password" value = {password} name = 'password' onChange = {e => onChange(e)} required/>
                     </div>                 
-                    <div    classnameName = "container-login100-form-btn">
-                    <div    classnameName = "wrap-login100-form-btn">
-                    <div    classnameName = "login100-form-bgbtn"></div>
-                    <button classnameName = "login100-form-btn"> Sign in </button>
+                    <div    className = "container-login100-form-btn">
+                    <div    className = "wrap-login100-form-btn">
+                    <div    className = "login100-form-bgbtn"></div>
+                    <button className = "login100-form-btn"> Sign in </button>
                         </div>
                     </div>
-                    <div  classnameName = "text-center p-t-115">
-                    <span classnameName = "txt1"> Do not have an account? </span>
-                    <a    classnameName = "txt2" href = "register"> Sign up </a>
+                    <div  className = "text-center p-t-115">
+                    <span className = "txt1"> Do not have an account? </span>
+                    <a    className = "txt2" href = "register"> Sign up </a>
                     </div>
                 </form>
             </div>
@@ -65,4 +64,4 @@ Login.propTypes = {
 const mapStateToProps = state =>({
     auth: state.auth.isAuthenticated
 });
-export default connect(mapStateToProps, { login})(Login);
+export default connect(mapStateToProps, {login})(Login);
