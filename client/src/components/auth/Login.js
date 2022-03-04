@@ -1,9 +1,9 @@
-import React, { Fragment, useState } from 'react'
+import React, { Fragment, useState, Link } from 'react'
 import { connect } from 'react-redux';
 import PropTypes  from 'prop-types';
 import { login } from '../../actions/auth';
-import {Navigate} from 'react-router-dom';
-import "../css/main.css"
+import {Navigate } from 'react-router-dom';
+import "../css/Login.css"
  const Login = ({login, isAuthenticated}) => {
      const [formData, setFormData] = useState({
          name    : '',
@@ -17,7 +17,10 @@ import "../css/main.css"
         login(name,email,password);  
     }
     //Redirect if login success
-   
+      //Redirect if register success
+      if(isAuthenticated){
+        return { component: () => <Navigate to="/Register" /> }
+    }
     return (
         <Fragment>
         <div  className = "limiter">

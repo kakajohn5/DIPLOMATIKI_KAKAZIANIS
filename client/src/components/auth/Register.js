@@ -4,6 +4,7 @@ import { setAlert } from '../../actions/alert';
 import { register } from '../../actions/auth';
 import PropTypes  from 'prop-types';
 import {Navigate} from 'react-router-dom';
+import "../css/Register.css"
  const Register = ({setAlert, register, isAuthenticated}) => {
      const [formData, setFormData] = useState({
          name    : '',

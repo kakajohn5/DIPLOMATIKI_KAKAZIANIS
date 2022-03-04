@@ -4,11 +4,11 @@ const PSYCHAT = ({}) => {
         <Fragment>
        
 <body>
-	<header classname = "header">
+	<header classname = "header" style={{display:"flex", justifyContent:"center"}}>
 	<nav    classname = "navbar">
 	
 	<ul     classname = "nav-menu">
-		<li     classname = "nav-item"> <a href   = "/MAIN" classname   = "nav-logo">Home</a> </li>
+		<li     classname = "nav-item"> <a href   = "/MAinp" classname   = "nav-logo">Home</a> </li>
 		<li     classname = "nav-item"> <a href   = "/Articles" classname  = "nav-link">Articles</a> </li>
 		<li     classname = "nav-item"> <a href   = "/DOCCHAT" classname = "nav-link">Find a doctor</a> </li>
 		<li     classname = "nav-item"> <a href   = "/PSYCHAT" classname = "nav-link">Find a psychologist</a> </li>

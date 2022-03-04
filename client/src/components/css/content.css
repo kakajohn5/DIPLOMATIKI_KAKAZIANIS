@@ -2,12 +2,14 @@ header img {
     height: 80px;
 }
 body {
+    position: relative;
+    top: 18em;
     height          : 125vh;
-    
     background-size : cover;
     font-family     : sans-serif;
     margin-top      : 80px;
     padding         : 30px;
+    background-color: #666666 !important;
 }
 
 main {
@@ -15,7 +17,7 @@ main {
 }
 
 header {
-    background-color: #8b868666;
+    background-color: #ffffff;
     position        : fixed;
     top             : 0;
     left            : 0;
@@ -55,7 +57,7 @@ li {
 }
 
 a {
-    text-decoration: none;
+    text-decoration: none !important;
 }
 .header{
     border-bottom: 1px solid #E2E8F0;
@@ -94,16 +96,19 @@ a {
     font-size  : 1.6rem;
     font-weight: 400;
     color      : #475569;
+    text-decoration: none;
 }
 
 .nav-link:hover{
     color: #482ff7;
+    text-decoration: none;
 }
 
 .nav-logo {
     font-size  : 2.1rem;
     font-weight: 500;
     color      : #482ff7;
+    text-decoration: none;
 }
 @media only screen and (max-width: 768px) {
     .nav-menu {

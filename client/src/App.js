@@ -26,7 +26,6 @@ const App = () =>{
   return (
  <Provider store={store}>
  <Router>
-   
    <Fragment>
       <Alert />
        <Routes>
